@@ -42,7 +42,7 @@ public class Trie {
 	void insert(String key) 
 	{ 
 		
-		System.out.println("Inserting key : " + key);
+		//System.out.println("Inserting key : " + key);
 		
 		int level; 
 		int length = key.length(); 

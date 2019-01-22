@@ -17,5 +17,12 @@ Other Notes
 2. Project uses Java/JSP/Jquery/Javascript/HTML 
 
 
-
+Build Instructions
+1. Clone this repository
+2. Run `mvn clean install`
+3. Download tomcat runtime
+4. Copy war file(DomainSearchApp.war) from target folder to webapps of tomcat installation dir
+5. Start tomcat
+6. Go to http://localhost:8080/DomainSearchApp/search.html
+7. type in two or more chars for autocomplete to show up
 

@@ -25,7 +25,7 @@ public class DomainIndexer {
 				if(readLine.length() > 0 && readLine.contains(",")) {
 					index.insert(readLine.toLowerCase().split(",")[1]);
 				}
-				System.out.println(readLine);
+				//System.out.println(readLine);
 			}
 		}
 		catch(Exception ex) {

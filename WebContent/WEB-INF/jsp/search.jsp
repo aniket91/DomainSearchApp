@@ -24,7 +24,7 @@
 
 <script>
 $( "#domainFieldId" ).autocomplete({
-	minLength: 2,
+	minLength: 3,
 	source: function(request,response) {
 		var searchTerm = request.term;
 		console.log(searchTerm);
@@ -48,11 +48,11 @@ processDomains = function() {
 			console.log("Multiple results : " + result);
 			var appendHtml = "";
 			result.forEach(function(domain){
-				appendHtml = appendHtml + "<li>" + domain + "</li><br/>"
+				appendHtml = appendHtml + "<li><a href='http://" + domain + "'>" + domain + "</a></li><br/>"
 			})
 			console.log("appendHtml : " + appendHtml);
 			var searchResults = $("#searchResults");
-			searchResults.append(appendHtml);
+			searchResults.html(appendHtml);
 		}
 	});
 

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 
  * @author athakur
- * Trie implementation
+ * Trie implementation for index
  */
 public class Trie { 
 	

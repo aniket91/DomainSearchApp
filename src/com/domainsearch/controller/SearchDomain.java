@@ -16,6 +16,12 @@ import org.springframework.web.servlet.ModelAndView;
 import com.domainsearch.index.DomainIndexer;
 import com.google.gson.Gson;
 
+/**
+ * 
+ * @author athakur
+ *
+ * Main controller to handle all request coming to the web container
+ */
 @Controller
 public class SearchDomain {
 	

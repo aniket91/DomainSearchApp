@@ -5,6 +5,11 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.List;
 
+/**
+ * 
+ * @author athakur
+ * Indexer service that is used by the controller to fetch indexed entries
+ */
 public class DomainIndexer {
 	
 	Trie index = new Trie();

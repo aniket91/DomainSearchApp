@@ -14,6 +14,10 @@
 <input type="text" id="domainFieldId" name="domainsearch" placeholder="Search domain names.."/>
 <button onclick="processDomains()">Submit</button>
 
+<br/>
+<h3>Search results</h3>
+<ul id="searchResults"></ul>
+
 </body>
 </html>
 
@@ -37,10 +41,18 @@ processDomains = function() {
 	console.log("Domain str: " + searchTerm);
 	var result = getDomains(searchTerm, function(result){
 		if(result.length == 1) {
-			console.log("Single result: " + result[0])
+			console.log("Single result: " + result[0]);
+			  var win = window.open("http://" + result[0], '_blank');
 		}
 		else {
 			console.log("Multiple results : " + result);
+			var appendHtml = "";
+			result.forEach(function(domain){
+				appendHtml = appendHtml + "<li>" + domain + "</li><br/>"
+			})
+			console.log("appendHtml : " + appendHtml);
+			var searchResults = $("#searchResults");
+			searchResults.append(appendHtml);
 		}
 	});
 

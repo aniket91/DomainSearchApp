@@ -25,4 +25,7 @@ Build Instructions
 5. Start tomcat
 6. Go to http://localhost:8080/DomainSearchApp/search.html
 7. type in two or more chars for autocomplete to show up
+8. Click on submit.
+9. If single result is returned it would open in new tab (make sure popups are enabled for localhost)
+10. If multiple results are returned it would be displaed below seaarch field
 

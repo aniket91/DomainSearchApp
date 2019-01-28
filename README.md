@@ -28,7 +28,9 @@ Simple spring and maven based web application to index and search domains.
 1. Project needs to be deployed on a tomcat container
 2. Project uses Java/JSP/Jquery/Javascript/HTML 
 
-## Known limitations
+## Known limitations & furture scope
 1. Indexing implementation does not handle all chars. It just handles chars/numbers and a .
 2. API to fetch matched domain results is not authenticated
+3. UI can be made better with frameworks like bootstrap
+4. Results returned by API can be paginated to avoid latency due to large result set returns 
 
